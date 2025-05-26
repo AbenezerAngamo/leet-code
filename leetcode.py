@@ -41,4 +41,33 @@ class LeetCode:
         ten = ["","X","XX","XXX","XL","L","LX","LXX","LXXX","XC"]
         hundred = ["","C","CC","CCC","CD","D","DC","DCC","DCCC","CM"]
         thousand = ["","M","MM","MMM"]       
-        return thousand[(num//1000)] + hundred[((num%1000)//100)] + ten[((num%100)//10)] + one[(num%10)]
+        return thousand[(num//1000)] + hundred[((num%1000)//100)] + ten[((num%100)//10)] + one[(num%10)]    
+
+    def myAtoi(self, s: str) -> int:
+        num,i = 0,0
+        s = s.strip()
+        if len(s) == 0:
+            return 0
+        if len(s) > 200:
+            s = s[:200]
+        neg = False
+        if s[0] == "-": 
+           neg = True
+           s = s[1:]
+        elif s[0] == "+":
+            s = s[1:]
+        else:
+            pass
+        while i<len(s) and (ord(s[i]) in range(48,58)):
+               num*=10
+               num += int((s[i]))
+               i +=1
+
+        if neg:
+            num *= -1 
+        if num>(2**31)-1:
+           return 2**31 - 1
+        elif num<(-2**31):     
+            return -2**31
+        else:
+            return num

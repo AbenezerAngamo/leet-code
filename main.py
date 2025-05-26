@@ -17,3 +17,11 @@ if __name__ == "__main__":
 	print(leetobj.intToRoman(3749)=="MMMDCCXLIX")
 	print(leetobj.intToRoman(58)=="LVIII")
 	print(leetobj.intToRoman(1994)=="MCMXCIV")
+
+	# converts a string to a 32-bit signed integer
+	print(leetobj.myAtoi("42"))
+	print(leetobj.myAtoi("   -42"))
+	print(leetobj.myAtoi("4193 with words"))
+	print(leetobj.myAtoi("words and 987"))
+	print(leetobj.myAtoi("-91283472332"))
+	print(leetobj.myAtoi("2147483648"))	
