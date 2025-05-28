@@ -25,3 +25,12 @@ if __name__ == "__main__":
 	print(leetobj.myAtoi("words and 987"))
 	print(leetobj.myAtoi("-91283472332"))
 	print(leetobj.myAtoi("2147483648"))	
+
+
+	# remove the duplicates in-place such that each element appears only once and returns the new length
+	print(leetobj.removeDuplicates([1, 1, 2]))
+	print(leetobj.removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]))
+	print(leetobj.removeDuplicates([1, 2, 3, 4, 5]))
+	print(leetobj.removeDuplicates([]))
+	print(leetobj.removeDuplicates([1, 1, 1, 1, 1]))
+	print(leetobj.removeDuplicates([1, 2, 2, 3, 4, 4, 5, 5, 6]))	
