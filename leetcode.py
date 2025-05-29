@@ -79,3 +79,34 @@ class LeetCode:
                 j+=1
                 nums[j]=nums[i]
         return j+1
+    
+    def reverse(self, x: int) -> int:
+        # Implementation 1
+        
+        # _x = abs(x)
+        # _rev = int(str(_x)[::-1])
+
+        # if _rev > (2**31):
+        #     return 0
+        # if x <0:               
+        #     return -_rev 
+        # else:            
+        #     return _rev
+        
+        # Implementation 2
+        mul = 0
+        sign = True if x<0 else False
+        x = abs(x)
+        while x >0:           
+            if x == 1:
+                mul *=10
+                mul += 1    
+                break
+            mul *=10
+            mul += x%10
+            x //=10      
+        if (mul > (2**31)-1) or (mul < -(2**31)):
+            return 0
+        if sign:
+            return -1*mul
+        return mul
