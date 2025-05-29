@@ -34,3 +34,12 @@ if __name__ == "__main__":
 	print(leetobj.removeDuplicates([]))
 	print(leetobj.removeDuplicates([1, 1, 1, 1, 1]))
 	print(leetobj.removeDuplicates([1, 2, 2, 3, 4, 4, 5, 5, 6]))	
+
+	# reverse the digits of an integer
+	# Note: The reverse function should handle overflow cases
+	print(leetobj.reverse(123))
+	print(leetobj.reverse(-123))
+	print(leetobj.reverse(120))
+	print(leetobj.reverse(0))
+	print(leetobj.reverse(1534236469))  # This should return 0 due to overflow
+	print(leetobj.reverse(1463847412))  # This should return 2147483641 due to overflow
