@@ -110,3 +110,20 @@ class LeetCode:
         if sign:
             return -1*mul
         return mul
+    
+    def restoreString(self, s: str, indices: list[int]) -> str:
+        dictstr = {}
+        
+        sortedstr = ""
+        j=0
+        
+        for i in indices:
+            
+            dictstr[i] = s[j]           
+            j=j+1
+                        
+        for h in sorted(dictstr):
+            
+            sortedstr = sortedstr + dictstr[h]
+        
+        return sortedstr  
