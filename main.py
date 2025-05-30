@@ -44,6 +44,7 @@ if __name__ == "__main__":
 	print(leetobj.reverse(1534236469))  # This should return 0 due to overflow
 	print(leetobj.reverse(1463847412))  # This should return 2147483641 due to overflow
 
+	# restore the string by returning the original string after rearranging the characters at the indices given by the indices array
 	print(leetobj.restoreString("abc", [0, 1, 2]))
 	print(leetobj.restoreString("codeleet", [4,5,6,7,0,2,1,3]))
 	print(leetobj.restoreString("aiohn", [3,1,4,2,0]))
