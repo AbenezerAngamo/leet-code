@@ -127,3 +127,15 @@ class LeetCode:
             sortedstr = sortedstr + dictstr[h]
         
         return sortedstr  
+
+    def strStr(self, haystack: str, needle: str) -> int:
+        
+        j = 0
+        if len(haystack) <len(needle):
+            return -1
+        while len(needle)<=len(haystack[j:]):
+            if needle == haystack[j:(j+len(needle))]:
+                return j
+            j +=1
+            
+        return -1

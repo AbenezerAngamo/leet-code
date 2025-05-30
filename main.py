@@ -48,3 +48,12 @@ if __name__ == "__main__":
 	print(leetobj.restoreString("abc", [0, 1, 2]))
 	print(leetobj.restoreString("codeleet", [4,5,6,7,0,2,1,3]))
 	print(leetobj.restoreString("aiohn", [3,1,4,2,0]))
+
+	# find the first occurrence of a substring in a string
+	print(leetobj.strStr("hello", "ll"))
+	print(leetobj.strStr("aaaaa", "bba"))
+	print(leetobj.strStr("", "a"))
+	print(leetobj.strStr("haystack", "needle"))
+	print(leetobj.strStr("mississippi", "issip"))
+	print(leetobj.strStr("abcde", "cde"))
+	print(leetobj.strStr("abcde", "f"))
