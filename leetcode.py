@@ -110,3 +110,32 @@ class LeetCode:
         if sign:
             return -1*mul
         return mul
+    
+    def restoreString(self, s: str, indices: list[int]) -> str:
+        dictstr = {}
+        
+        sortedstr = ""
+        j=0
+        
+        for i in indices:
+            
+            dictstr[i] = s[j]           
+            j=j+1
+                        
+        for h in sorted(dictstr):
+            
+            sortedstr = sortedstr + dictstr[h]
+        
+        return sortedstr  
+
+    def strStr(self, haystack: str, needle: str) -> int:
+        
+        j = 0
+        if len(haystack) <len(needle):
+            return -1
+        while len(needle)<=len(haystack[j:]):
+            if needle == haystack[j:(j+len(needle))]:
+                return j
+            j +=1
+            
+        return -1
