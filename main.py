@@ -48,7 +48,7 @@ if __name__ == "__main__":
 	print(leetobj.restoreString("abc", [0, 1, 2]))
 	print(leetobj.restoreString("codeleet", [4,5,6,7,0,2,1,3]))
 	print(leetobj.restoreString("aiohn", [3,1,4,2,0]))
-
+	
 	# find the first occurrence of a substring in a string
 	print(leetobj.strStr("hello", "ll"))
 	print(leetobj.strStr("aaaaa", "bba"))
@@ -57,3 +57,14 @@ if __name__ == "__main__":
 	print(leetobj.strStr("mississippi", "issip"))
 	print(leetobj.strStr("abcde", "cde"))
 	print(leetobj.strStr("abcde", "f"))
+
+
+	# find the length of the longest substring without repeating characters
+	print(leetobj.lengthOfLongestSubstring("abcabcbb"))
+	print(leetobj.lengthOfLongestSubstring("bbbbb"))
+	print(leetobj.lengthOfLongestSubstring("pwwkew"))
+	print(leetobj.lengthOfLongestSubstring(""))
+	print(leetobj.lengthOfLongestSubstring("a"))
+	print(leetobj.lengthOfLongestSubstring("dvdf"))
+	print(leetobj.lengthOfLongestSubstring("tmmzuxt"))
+	print(leetobj.lengthOfLongestSubstring("aab"))
