@@ -139,3 +139,23 @@ class LeetCode:
             j +=1
             
         return -1
+    
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        if s == "":
+            return 0
+        if len(s) == 1:
+            return 1
+
+        i,j=0,0        
+        _max = 0
+        _dict = {}
+        while j<(len(s)):
+           if s[j] in _dict:
+              i = max(i, _dict[s[j]] + 1)
+            
+           _dict[s[j]] = j  
+           if _max <(j-i + 1):
+                _max = j-i +1
+           j +=1                        
+
+        return _max
