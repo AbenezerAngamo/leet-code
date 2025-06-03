@@ -68,3 +68,12 @@ if __name__ == "__main__":
 	print(leetobj.lengthOfLongestSubstring("dvdf"))
 	print(leetobj.lengthOfLongestSubstring("tmmzuxt"))
 	print(leetobj.lengthOfLongestSubstring("aab"))
+
+
+	# remove duplicates from a sorted array such that each element appears at most twice and returns the new length
+	print(leetobj.removeDuplicates([1, 1, 2, 2, 3]))
+	print(leetobj.removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]))
+	print(leetobj.removeDuplicates([1, 1, 2, 2, 3, 3, 4, 4, 5, 5]))
+	print(leetobj.removeDuplicates([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+	print(leetobj.removeDuplicates([1, 1, 1, 1, 1, 1, 1, 1, 1, 1]))
+	print(leetobj.removeDuplicates([1, 2, 2, 3, 4, 4, 5, 5, 6, 6]))
