@@ -173,3 +173,10 @@ class LeetCode:
             
         
         return j
+    
+    def search(self, nums: list[int], target: int) -> int:
+        mid = len(nums)//2
+        if target not in nums:
+            return -1
+        else:
+            return nums.index(target)
