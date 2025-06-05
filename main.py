@@ -77,3 +77,8 @@ if __name__ == "__main__":
 	print(leetobj.removeDuplicates([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 	print(leetobj.removeDuplicates([1, 1, 1, 1, 1, 1, 1, 1, 1, 1]))
 	print(leetobj.removeDuplicates([1, 2, 2, 3, 4, 4, 5, 5, 6, 6]))
+
+	# search for a target value in a sorted array and return its index or -1 if not found
+	print(leetobj.search([1, 2, 3, 4, 5], 3))  # Should return index of 3
+	print(leetobj.search([1, 2, 3, 4, 5], 6))  # Should return -1 (not found)
+	print(leetobj.search([], 1))  # Should return -1 (not found)					
