@@ -82,3 +82,11 @@ if __name__ == "__main__":
 	print(leetobj.search([1, 2, 3, 4, 5], 3))  # Should return index of 3
 	print(leetobj.search([1, 2, 3, 4, 5], 6))  # Should return -1 (not found)
 	print(leetobj.search([], 1))  # Should return -1 (not found)					
+
+	# search for the starting and ending position of a given target value in a sorted array
+	print(leetobj.searchRange([5, 7, 7, 8, 8, 10], 8))  # Should return [3, 4]
+	print(leetobj.searchRange([5, 7, 7, 8, 8, 10], 6))  # Should return [-1, -1]
+	print(leetobj.searchRange([], 0))  # Should return [-1, -1]
+	print(leetobj.searchRange([1, 2, 3, 4, 5], 3))  # Should return [2, 2]
+	print(leetobj.searchRange([1, 2, 3, 4, 5], 6))  # Should return [-1, -1]
+	print(leetobj.searchRange([1, 2, 2, 3, 4, 4, 5, 5, 6, 6], 2))  # Should return [1, 2]

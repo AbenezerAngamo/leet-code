@@ -180,3 +180,11 @@ class LeetCode:
             return -1
         else:
             return nums.index(target)
+    
+    def searchRange(self, nums: list[int], target: int) -> list[int]:
+        if target not in nums:
+            return [-1,-1]
+        else:
+            inv = nums[::-1]
+            return [nums.index(target), len(nums) -inv.index(target)-1]
+          
