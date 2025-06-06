@@ -90,3 +90,12 @@ if __name__ == "__main__":
 	print(leetobj.searchRange([1, 2, 3, 4, 5], 3))  # Should return [2, 2]
 	print(leetobj.searchRange([1, 2, 3, 4, 5], 6))  # Should return [-1, -1]
 	print(leetobj.searchRange([1, 2, 2, 3, 4, 4, 5, 5, 6, 6], 2))  # Should return [1, 2]
+
+
+	# remove all instances of a given value in-place and return the new length
+	print(leetobj.removeElement([3, 2, 2, 3], 3))  # Should return 2
+	print(leetobj.removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2))  # Should return 5
+	print(leetobj.removeElement([], 1))  # Should return 0
+	print(leetobj.removeElement([1, 2, 3, 4, 5], 6))  # Should return 5 (no elements removed)
+	print(leetobj.removeElement([1, 1, 1, 1, 1], 1))  # Should return 0 (all elements removed)
+	print(leetobj.removeElement([1, 2, 3, 4, 5], 3))  # Should return 4 (removes the element 3)
