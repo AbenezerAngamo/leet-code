@@ -188,3 +188,13 @@ class LeetCode:
             inv = nums[::-1]
             return [nums.index(target), len(nums) -inv.index(target)-1]
           
+        
+    def removeElement(self, nums: list[int], val: int) -> int:
+        if not nums:
+            return 0        
+        j = 0
+        for i in range(len(nums)):
+            if nums[i] != val:
+                nums[j] = nums[i]
+                j+=1               
+        return j
