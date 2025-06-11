@@ -99,3 +99,10 @@ if __name__ == "__main__":
 	print(leetobj.removeElement([1, 2, 3, 4, 5], 6))  # Should return 5 (no elements removed)
 	print(leetobj.removeElement([1, 1, 1, 1, 1], 1))  # Should return 0 (all elements removed)
 	print(leetobj.removeElement([1, 2, 3, 4, 5], 3))  # Should return 4 (removes the element 3)
+
+	# search for the index where a target value should be inserted in a sorted array
+	print(leetobj.searchInsert([1, 3, 5, 6], 5))  # Should return 2
+	print(leetobj.searchInsert([1, 3, 5, 6], 2))  # Should return 1
+	print(leetobj.searchInsert([1, 3, 5, 6], 7))  # Should return 4
+	print(leetobj.searchInsert([1, 3, 5, 6], 0))  # Should return 0
+	print(leetobj.searchInsert([1, 3, 5, 6], 4))  # Should return 2
