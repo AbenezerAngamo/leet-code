@@ -112,3 +112,5 @@ if __name__ == "__main__":
 	print(leetobj.longestCommonPrefix(["dog", "racecar", "car"]))  # Should return ""
 	print(leetobj.longestCommonPrefix([]))  # Should return ""
 	print(leetobj.longestCommonPrefix(["a"]))  # Should return "a"
+	print(leetobj.longestCommonPrefix(["", "b", "c"]))  # Should return ""
+	print(leetobj.longestCommonPrefix(["ab", "a"]))  # Should return "a"
