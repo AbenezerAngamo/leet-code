@@ -188,6 +188,41 @@ class LeetCode:
             inv = nums[::-1]
             return [nums.index(target), len(nums) -inv.index(target)-1]
           
+        
+    def removeElement(self, nums: list[int], val: int) -> int:
+        if not nums:
+            return 0        
+        j = 0
+        for i in range(len(nums)):
+            if nums[i] != val:
+                nums[j] = nums[i]
+                j+=1               
+        return j
+
+
+    def searchInsert(self, nums: list[int], target: int) -> int:
+        l = 0
+        r = len(nums)-1
+        while l<=r:
+            mid = (l+r)//2
+            if nums[mid] == target:
+                return mid
+            elif nums[mid] > target:
+                r = mid - 1
+            else:
+                l = mid+1
+        return l
+
+    def longestCommonPrefix(self, strs):
+        if not strs:
+            return ""
+        prefix = strs[0]
+        for string in strs[1:]:
+            while string.find(prefix) != 0:
+                prefix = prefix[:-1]
+                if not prefix:
+                    return ""
+        return prefix
     def longestCommonPrefix(self, strs):
         if not strs:
             return ""

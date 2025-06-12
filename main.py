@@ -91,6 +91,30 @@ if __name__ == "__main__":
 	print(leetobj.searchRange([1, 2, 3, 4, 5], 6))  # Should return [-1, -1]
 	print(leetobj.searchRange([1, 2, 2, 3, 4, 4, 5, 5, 6, 6], 2))  # Should return [1, 2]
 
+
+	# remove all instances of a given value in-place and return the new length
+	print(leetobj.removeElement([3, 2, 2, 3], 3))  # Should return 2
+	print(leetobj.removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2))  # Should return 5
+	print(leetobj.removeElement([], 1))  # Should return 0
+	print(leetobj.removeElement([1, 2, 3, 4, 5], 6))  # Should return 5 (no elements removed)
+	print(leetobj.removeElement([1, 1, 1, 1, 1], 1))  # Should return 0 (all elements removed)
+	print(leetobj.removeElement([1, 2, 3, 4, 5], 3))  # Should return 4 (removes the element 3)
+
+	# search for the index where a target value should be inserted in a sorted array
+	print(leetobj.searchInsert([1, 3, 5, 6], 5))  # Should return 2
+	print(leetobj.searchInsert([1, 3, 5, 6], 2))  # Should return 1
+	print(leetobj.searchInsert([1, 3, 5, 6], 7))  # Should return 4
+	print(leetobj.searchInsert([1, 3, 5, 6], 0))  # Should return 0
+	print(leetobj.searchInsert([1, 3, 5, 6], 4))  # Should return 2
+
+	# find the longest common prefix string amongst an array of strings
+	print(leetobj.longestCommonPrefix(["flower", "flow", "flight"]))  # Should return "fl"
+	print(leetobj.longestCommonPrefix(["dog", "racecar", "car"]))  # Should return ""
+	print(leetobj.longestCommonPrefix([]))  # Should return ""
+	print(leetobj.longestCommonPrefix(["a"]))  # Should return "a"
+	print(leetobj.longestCommonPrefix(["", "b", "c"]))  # Should return ""
+	print(leetobj.longestCommonPrefix(["ab", "a"]))  # Should return "a"
+
 	# find the longest common prefix string amongst an array of strings
 	print(leetobj.longestCommonPrefix(["flower", "flow", "flight"]))  # Should return "fl"
 	print(leetobj.longestCommonPrefix(["dog", "racecar", "car"]))  # Should return ""
