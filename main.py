@@ -114,3 +114,12 @@ if __name__ == "__main__":
 	print(leetobj.longestCommonPrefix(["a"]))  # Should return "a"
 	print(leetobj.longestCommonPrefix(["", "b", "c"]))  # Should return ""
 	print(leetobj.longestCommonPrefix(["ab", "a"]))  # Should return "a"
+
+	# find the longest common prefix string amongst an array of strings
+	print(leetobj.longestCommonPrefix(["flower", "flow", "flight"]))  # Should return "fl"
+	print(leetobj.longestCommonPrefix(["dog", "racecar", "car"]))  # Should return ""
+	print(leetobj.longestCommonPrefix([""]))  # Should return ""
+	print(leetobj.longestCommonPrefix(["a"]))  # Should return "a"
+	print(leetobj.longestCommonPrefix(["ab", "a"]))  # Should return "a"
+	print(leetobj.longestCommonPrefix(["abc", "ab", "a"]))  # Should return "a"
+	print(leetobj.longestCommonPrefix(["a", "b", "c"]))  # Should return ""
